@@ -9,7 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1stArrayHomeWork", "1stArra
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2ndArrayHomeWork", "2ndArrayHomeWork\2ndArrayHomeWork.csproj", "{F59E2A85-2BCD-4D39-882F-8E579FCAB891}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hom_work_6", "hom_work_6\hom_work_6.csproj", "{9DFEFEBE-7629-470E-8F8C-95614944799E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "hom_work_6", "hom_work_6\hom_work_6.csproj", "{9DFEFEBE-7629-470E-8F8C-95614944799E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TelephoneBook", "TelephoneBook\TelephoneBook.csproj", "{0F1F76CE-F039-48C6-BBCF-0C3ECFB2D631}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TelephoneBookLib", "TelephoneBookLib\TelephoneBookLib.csproj", "{55852771-B8B6-4282-B73A-BA10AF873BB8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,14 @@ Global
 		{9DFEFEBE-7629-470E-8F8C-95614944799E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9DFEFEBE-7629-470E-8F8C-95614944799E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9DFEFEBE-7629-470E-8F8C-95614944799E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F1F76CE-F039-48C6-BBCF-0C3ECFB2D631}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F1F76CE-F039-48C6-BBCF-0C3ECFB2D631}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F1F76CE-F039-48C6-BBCF-0C3ECFB2D631}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F1F76CE-F039-48C6-BBCF-0C3ECFB2D631}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55852771-B8B6-4282-B73A-BA10AF873BB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55852771-B8B6-4282-B73A-BA10AF873BB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55852771-B8B6-4282-B73A-BA10AF873BB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55852771-B8B6-4282-B73A-BA10AF873BB8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
