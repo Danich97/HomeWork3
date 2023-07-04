@@ -10,7 +10,7 @@ namespace TelephoneBookLib
     {
         public string FirstName { get; }
         public string LastName { get; }
-        public string Adress { get; }
+        public string Adress { get; set; }
         public string TelephoneNumber { get; set; }
 
 
