@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TelephoneBook", "TelephoneB
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TelephoneBookLib", "TelephoneBookLib\TelephoneBookLib.csproj", "{55852771-B8B6-4282-B73A-BA10AF873BB8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cars", "cars\cars.csproj", "{E84CCDFC-847A-4201-B9B4-F5806F58E89B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "cars", "cars\cars.csproj", "{E84CCDFC-847A-4201-B9B4-F5806F58E89B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "comparison", "comparison\comparison.csproj", "{BDE823E1-4D2B-4978-8A1D-C40D9F6ADD56}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{E84CCDFC-847A-4201-B9B4-F5806F58E89B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E84CCDFC-847A-4201-B9B4-F5806F58E89B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E84CCDFC-847A-4201-B9B4-F5806F58E89B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDE823E1-4D2B-4978-8A1D-C40D9F6ADD56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDE823E1-4D2B-4978-8A1D-C40D9F6ADD56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDE823E1-4D2B-4978-8A1D-C40D9F6ADD56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDE823E1-4D2B-4978-8A1D-C40D9F6ADD56}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
