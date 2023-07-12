@@ -22,6 +22,25 @@ namespace cars
             Console.WriteLine("Your acceleration is 0.5!" + "\n");
         }
 
+        public override void CruiseControl()
+        {
+            Console.WriteLine("Please select the speed for cruise control");
+            int cruiseControleSpeed = int.Parse(Console.ReadLine());
+            int currentSpeed = 0;
+            int maxSpeedBmw = 120;
+            try
+            {
+                if (cruiseControleSpeed <= maxSpeedBmw)
+                {
+                    currentSpeed = cruiseControleSpeed;
+                }
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("You can't select Cruise Control speed value more than Max Speed!!!");
+            }
+        }
+
         public override void AdjustPostition()
         {
             int position = 0;

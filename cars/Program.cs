@@ -1,4 +1,5 @@
 ﻿using System.Diagnostics.Metrics;
+using System.Net.Http.Headers;
 using static cars.Program;
 
 namespace cars
@@ -22,6 +23,7 @@ namespace cars
             public abstract void TurnOffRadio();
             public abstract void ChangeStation();
             public abstract void IncreaseVolume();
+            public abstract void CruiseControl();
         }
         
        
@@ -33,10 +35,16 @@ namespace cars
             car.Accelerator();
         }
 
+        public static void CruiseControlSetup(car car) 
+        {
+            car.CruiseControl();        
+        }
+
         public static void Seat(car car)
         {
             while (true)
             {
+                
                 Console.WriteLine("Please select action with seat:" + "\n" + "1.Turn on heat" + "\n" + "2.Turn off heat" + "\n" + "3.Adjust position" + "\n" + "4.Exit");
                 int actionSeat = int.Parse(Console.ReadLine());
                 if (actionSeat == 1)
@@ -90,65 +98,74 @@ namespace cars
         }
         public static void Main(string[] args)
         {
- 
-                Console.WriteLine("Please choose the car that you want to work with:");
-                Console.WriteLine("1. BMW");
-                Console.WriteLine("2. Volvo");
-                Console.WriteLine("3. Lanos");
 
-                int choice = int.Parse(Console.ReadLine());
+            Console.WriteLine("Please choose the car that you want to work with:");
+            Console.WriteLine("1. BMW");
+            Console.WriteLine("2. Volvo");
+            Console.WriteLine("3. Lanos");
 
-                car selectedCar = null;
+            int choice = int.Parse(Console.ReadLine());
 
-                if (choice == 1)
+            car selectedCar = null;
+
+            if (choice == 1)
+            {
+                selectedCar = new BMW();
+            }
+            if (choice == 2)
+            {
+                selectedCar = new Volvo();
+            }
+
+            else if (choice == 3)
+            {
+                selectedCar = new Lanos();
+            }
+
+
+
+            if (selectedCar != null)
+
+            {
+                while (true)
                 {
-                    selectedCar = new BMW();
-                }
-                if (choice == 2)
-                {
-                    selectedCar = new Volvo();
-                }
 
-                else if (choice == 3) 
-                {
-                    selectedCar = new Lanos();
-                }
-                
+                    Console.WriteLine("Please select action:");
+                    Console.WriteLine("1. Get information about the car (Speed, brake system, and accelerator)");
+                    Console.WriteLine("2. Setup radio");
+                    Console.WriteLine("3. Setup seat");
+                    Console.WriteLine("4. Setup Cruise Control");
+                    Console.WriteLine("5. Exit");
 
-                if (selectedCar != null)
-                {
-                    while (true)
+                    int action = int.Parse(Console.ReadLine());
+
+                    switch (action)
                     {
-                        Console.WriteLine("Please select action:");
-                        Console.WriteLine("1. Get information about the car (Speed, brake system, and accelerator)");
-                        Console.WriteLine("2. Setup radio");
-                        Console.WriteLine("3. Setup seat");
-                        Console.WriteLine("4. Exit");
-
-                        int action = int.Parse(Console.ReadLine());
-                        
-                        switch (action)
-                        {
-                            case 1:
-                                getInfo(selectedCar);
-                                break;
-                            case 2:
-                                Radio(selectedCar);
-                                break;
-                            case 3:
-                                Seat(selectedCar);
-                                break;
-                            case 4:
-                                return;
-                            default:
-                                Console.WriteLine("Invalid action. Please try again.");
-                                break;
-                        }
+                        case 1:
+                            getInfo(selectedCar);
+                            break;
+                        case 2:
+                            Radio(selectedCar);
+                            break;
+                        case 3:
+                            Seat(selectedCar);
+                            break;
+                        case 4:
+                            CruiseControlSetup(selectedCar);
+                            break;
+                        case 5:
+                            return;
+                        default:
+                            Console.WriteLine("Invalid action. Please try again.");
+                            break;
                     }
                 }
+
+            }
+        }
             }
 
 
 
         }
-    }
+    
