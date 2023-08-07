@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter an arithmetic expression:");
+            Console.WriteLine("Enter an mathematic expression:");
             string expression = Console.ReadLine();
 
             double result = Calculate(expression);
